@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+## StartUp CPT Events
+--------------------------------------------------------------*/
+
+#events {
+    padding: 0;
+}
+
+#events .event {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#events .event-desc {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#events .event-desc:hover {
+    text-decoration: none;
+}
+
+#events .event-desc .name{
+    font-size: 22px;
+}
+
+#events .event-desc .date{
+    font-size: 16px;
+}
+
+#events .event-desc .title{
+    display: block;
+    width: 73px;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 73px;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+
+.event:hover .title{
+    opacity: 1 !important;
+}
+
